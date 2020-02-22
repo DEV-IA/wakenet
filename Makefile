@@ -3,7 +3,6 @@
 # project subdirectory.
 #
 
-PROJECT_NAME := wake_word_detection
-EXTRA_COMPONENT_DIRS += ../../components/
+PROJECT_NAME := $(notdir $(shell pwd))
 
-include $(IDF_PATH)/make/project.mk
+include $(MDF_PATH)/project.mk
